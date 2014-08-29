@@ -15,7 +15,6 @@ members of one or more netgroups.
 This cookbook depends on the following cookbooks:
 
 * `nsswitch` (https://github.com/jeffshantz/chef-nsswitch)
-* `shells`   (https://github.com/jeffshantz/chef-shells)
 
 ## Attributes
 
@@ -138,19 +137,6 @@ find an NIS server to which it can bind.
 
 If `restricted_to` is not specified, all valid NIS users will have access to the
 host.
-
-Note that this cookbook depends on the `shells` cookbook.  By default, this
-cookbook installs the usual shells that one might need: `bash csh ksh tcsh zsh`.
-If you require a different set of shells, you will need to configure the 
-`packages` attribute of the `shells` cookbook appropriately.  See the 
-documentation for the `shells` cookbook for more information:
-https://github.com/jeffshantz/chef-shells
-
-Additionally, if you are managing a legacy infrastructure and some of your users
-have shells in non-standard locations (e.g. `/usr/shells/bash` instead of 
-`/bin/bash`), you will need to configure the `symlinks` attribute of the 
-`shells` cookbook appropriately.  Once again, see the documentation for the 
-`shells` cookbook.
 
 ## Testing
 

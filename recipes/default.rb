@@ -126,7 +126,3 @@ end
 
 # Write /etc/nsswitch.conf so that NIS is enabled
 include_recipe "nsswitch::default"
-
-# Install shells so that NIS users won't be denied access due to missing shells
-# on the local system
-include_recipe "shells::default"

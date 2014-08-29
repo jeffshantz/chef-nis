@@ -129,10 +129,6 @@ describe 'nis::default' do
       expect(chef_run).to include_recipe('nsswitch::default')
     end
 
-    it 'includes the shells::default recipe' do
-      expect(chef_run).to include_recipe('shells::default')
-    end
-
   end
 
 end
