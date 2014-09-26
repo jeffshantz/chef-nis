@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: nis
-# Recipe:: no-managed-passwd
+# Recipe:: passwd-unmanaged
 #
 # Copyright 2014, Western University
 #
